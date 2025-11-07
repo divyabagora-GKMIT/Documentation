@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://divyabagora-gkmit.github.io/Documentation/</loc>
+         <lastmod>2025-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://divyabagora-gkmit.github.io/Documentation/data_flow/</loc>
+         <lastmod>2025-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://divyabagora-gkmit.github.io/Documentation/functional/</loc>
+         <lastmod>2025-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://divyabagora-gkmit.github.io/Documentation/usecase/business/</loc>
+         <lastmod>2025-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://divyabagora-gkmit.github.io/Documentation/usecase/technical/</loc>
+         <lastmod>2025-11-07</lastmod>
+    </url>
 </urlset>

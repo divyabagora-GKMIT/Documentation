@@ -1,0 +1,9 @@
+site_name: Employee Management System
+theme: 
+  name: material
+nav:
+  - Functional Requirement: index.md
+  - Use Case:
+      - Technical: usecase/technical.md
+      - Business: usecase/business.md
+  - Data Flow: data_flow.md

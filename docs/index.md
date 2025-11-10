@@ -77,7 +77,18 @@ It ensures **secure access control** — only authorized users (like HR or Admin
 
 ---
 
-### **FR-5: Role-Based Access Control (RBAC)**
+### **FR-5: Search Functionality**
+
+| **Field** | **Description** |
+|------------|----------------|
+| **Description** | Users should be able to search employees, departments, and projects from the dashboard. |
+| **Inputs** | Search text (name, email, or project title). |
+| **Outputs** | Show matching results with basic info. If no match, show *“No records found.”* |
+<!-- | **Acceptance Criteria** | - Supports partial and case-insensitive search.<br>- Results load quickly (within 2 seconds).<br>- Unauthorized users cannot view restricted data. | -->
+
+---
+
+### **FR-6: Role-Based Access Control (RBAC)**
 
 | **Field** | **Description** |
 |------------|----------------|

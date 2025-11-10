@@ -7,3 +7,7 @@ nav:
       - Technical: usecase/technical.md
       - Business: usecase/business.md
   - Data Flow: data_flow.md
+  - Entity Relationship Diagram: entity_relationship.md
+
+plugins:
+  - mermaid2

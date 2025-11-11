@@ -98,4 +98,4 @@ erDiagram
     employees ||--o{ project_members : "many to many"
     projects ||--o{ project_members : "many to many"
 ``` -->
-![](./images/mermaid-diagram-2025-11-10-143954.png)
+![](./images/mermaid-diagram-2025-11-11-151714.png)

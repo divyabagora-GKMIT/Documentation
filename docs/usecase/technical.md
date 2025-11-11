@@ -94,3 +94,8 @@ Automate payroll calculation based on attendance, leaves, and performance data.
 
 ---
 
+### 5. Role-Based Access and Permissions (Planned Update)
+**Description:**  
+In future iterations, users will be assigned multiple roles such as **User**, **HR**, and **Admin**,  
+each with distinct access levels and permissions for managing employees, reviewing requests,  
+and handling system data securely.

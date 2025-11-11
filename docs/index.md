@@ -92,10 +92,10 @@ It ensures **secure access control** — only authorized users (like HR or Admin
 
 | **Field** | **Description** |
 |------------|----------------|
-| **Description** | Control system access and permissions based on predefined roles (Admin, HR, Employee). |
+| **Description** | Control system access and permissions based on predefined roles (**Admin**, **HR**, **Employee**). In future iterations, users will be assigned multiple roles such as **User**, **HR**, and **Admin**, each with distinct access levels and permissions. When an **HR** user performs actions like submitting **leave requests** or providing **feedback**, they will temporarily act as an **Employee**, following employee-level permissions for those specific modules. |
 | **Inputs** | Role definitions and permissions. |
 | **Outputs** | Grant or deny access. |
-| **Acceptance Criteria** | - Employee: Can view only their profile.<br> - HR/Admin: Can view and manage all records.<br> - Unauthorized actions are denied and logged. |
+| **Acceptance Criteria** | - **Employee:** Can view only their profile.<br> - **HR/Admin:** Can view and manage all records.<br> - **Unauthorized actions:** Are denied and logged. |
 
 ---
 

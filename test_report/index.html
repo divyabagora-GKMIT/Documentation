@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-report-employee-management-system" class="md-skip">
+        <a href="#project-test-plan-summary" class="md-skip">
           Skip to content
         </a>
       
@@ -384,6 +384,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Test Report
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -395,6 +408,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-test-plan-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Test Plan Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-strategy-and-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Strategy and Roles
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -420,6 +470,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-test-plan-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Test Plan Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-strategy-and-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Strategy and Roles
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -434,80 +510,116 @@
 
 
 
-<h1 id="test-report-employee-management-system">Test Report - Employee Management System</h1>
+<h1 id="project-test-plan-summary">Project Test Plan Summary</h1>
+<p>This document summarizes the objectives, coverage goals, and critical entry/exit criteria for the core functional testing phases.</p>
 <hr />
-<h1 id="tp-01-verify-user-authentication-functionality">TP-01: Verify User Authentication Functionality</h1>
-<p><strong>Test Plan ID:</strong> TP-01
-<strong>Title:</strong> Verify User Authentication Functionality</p>
+<h2 id="comprehensive-test-plan-summary">Comprehensive Test Plan Summary</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Test Plan ID</th>
+<th style="text-align: left;">Objective &amp; Scope</th>
+<th style="text-align: left;">Test Coverage Goals</th>
+<th style="text-align: left;">Entry Criteria</th>
+<th style="text-align: left;">Exit Criteria</th>
+<th style="text-align: left;">Key Risk &amp; Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>TP-01</strong></td>
+<td style="text-align: left;"><strong>User Authentication:</strong> Ensure the authentication module allows valid users to log in and securely blocks invalid/unauthorized access.</td>
+<td style="text-align: left;">Valid login; Invalid login; Account lock scenarios; Unauthorized access attempts.</td>
+<td style="text-align: left;">Auth API developed; User table seeded.</td>
+<td style="text-align: left;">All login &amp; access control tests passed; No high/critical defects.</td>
+<td style="text-align: left;"><strong>Risk:</strong> Weak validation may allow brute force. <strong>Mitigation:</strong> Implement rate limiting &amp; lock mechanism.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-02</strong></td>
+<td style="text-align: left;"><strong>Employee CRUD Operations:</strong> Validate that Admin/HR can create, read, update, and delete employee information.</td>
+<td style="text-align: left;">Add/edit/delete employee; Unique employee ID check; Access control; Data accuracy.</td>
+<td style="text-align: left;">Employee module functional; Role permissions implemented.</td>
+<td style="text-align: left;">All CRUD test cases passed; No data corruption found.</td>
+<td style="text-align: left;"><strong>Risk:</strong> Wrong employee delete/edit. <strong>Mitigation:</strong> Permission checks &amp; soft delete.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-03</strong></td>
+<td style="text-align: left;"><strong>Department Creation &amp; Association:</strong> Ensure departments can be created and employees can be associated correctly.</td>
+<td style="text-align: left;">Unique department code; Add/edit department; Link employees to departments.</td>
+<td style="text-align: left;">Department module ready; Employee module functional.</td>
+<td style="text-align: left;">All relations validated; No mapping errors.</td>
+<td style="text-align: left;"><strong>Risk:</strong> Wrong employee mapping. <strong>Mitigation:</strong> Add validation before linking.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-04</strong></td>
+<td style="text-align: left;"><strong>Project &amp; Employee Assignment:</strong> Validate the project module and ensure correct assignment of employees.</td>
+<td style="text-align: left;">Add/edit projects; Assign employees; Prevent assignment to inactive projects.</td>
+<td style="text-align: left;">Projects module completed.</td>
+<td style="text-align: left;">All assignments working correctly.</td>
+<td style="text-align: left;"><strong>Risk:</strong> Employees assigned incorrectly. <strong>Mitigation:</strong> Validation on status &amp; availability.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-05</strong></td>
+<td style="text-align: left;"><strong>Global Search:</strong> Ensure global search works accurately across multiple modules (Employees, Departments, Projects).</td>
+<td style="text-align: left;">Search by name/email/project; Accurate result display; "No results found" handling.</td>
+<td style="text-align: left;">All modules integrated.</td>
+<td style="text-align: left;">Search accuracy tested and approved.</td>
+<td style="text-align: left;"><strong>Risk:</strong> Slow search results. <strong>Mitigation:</strong> Add indexing.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-06</strong></td>
+<td style="text-align: left;"><strong>Role-Based Access Control (RBAC):</strong> Validate that roles (Admin, HR, Employee) have appropriate access and restrictions.</td>
+<td style="text-align: left;">Employee: Limited access; HR/Admin: Full management rights; Unauthorized action checks.</td>
+<td style="text-align: left;">RBAC implemented.</td>
+<td style="text-align: left;">All permissions verified.</td>
+<td style="text-align: left;"><strong>Risk:</strong> Unauthorized access due to bug. <strong>Mitigation:</strong> Add backend-level checks.</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="acceptance-criteria">Acceptance Criteria</h2>
-<ul>
-<li>User must be able to log in using <strong>valid email/username and password</strong>.</li>
-<li>Password must be <strong>encrypted</strong> and securely validated.</li>
-<li>Failed login attempts must display an <strong>error message</strong>.</li>
-<li>Unauthorized users must not access <strong>restricted pages</strong>.</li>
-<li>Account should <strong>lock</strong> after a predefined number of failed attempts.</li>
-</ul>
-<hr />
-<h1 id="tp-02-validate-employee-data-crud-operations">TP-02: Validate Employee Data CRUD Operations</h1>
-<p><strong>Test Plan ID:</strong> TP-02
-<strong>Title:</strong> Validate Employee Data CRUD Operations</p>
-<hr />
-<h2 id="acceptance-criteria_1">Acceptance Criteria</h2>
-<ul>
-<li><strong>Admin/HR</strong> can add, edit, update, and delete employee records (CRUD operations).</li>
-<li><strong>Employee ID</strong> must be unique.</li>
-<li>Only <strong>Admin/HR</strong> roles can modify employee details.</li>
-<li>Successful operations must display <strong>confirmation messages</strong>.</li>
-<li>Employee profile view must display <strong>accurate information</strong>.</li>
-</ul>
-<hr />
-<h1 id="tp-03-validate-department-creation-employee-association">TP-03: Validate Department Creation &amp; Employee Association</h1>
-<p><strong>Test Plan ID:</strong> TP-03
-<strong>Title:</strong> Validate Department Creation &amp; Employee Association</p>
-<hr />
-<h2 id="acceptance-criteria_2">Acceptance Criteria</h2>
-<ul>
-<li><strong>Department code</strong> must be unique.</li>
-<li><strong>Admin/HR</strong> can add and update department details.</li>
-<li>Employees can be associated correctly with their departments.</li>
-<li>System must display the department list with <strong>associated employees</strong>.</li>
-</ul>
-<hr />
-<h1 id="tp-04-validate-project-employee-assignment-functionality">TP-04: Validate Project &amp; Employee Assignment Functionality</h1>
-<p><strong>Test Plan ID:</strong> TP-04
-<strong>Title:</strong> Validate Project &amp; Employee Assignment Functionality</p>
-<hr />
-<h2 id="acceptance-criteria_3">Acceptance Criteria</h2>
-<ul>
-<li>Every project must have at least <strong>one assigned employee</strong>.</li>
-<li>Employees must not be assigned to <strong>inactive projects</strong>.</li>
-<li>Project data (name, ID, description, dates) must be <strong>stored correctly</strong>.</li>
-<li>Project list must show <strong>employees and assigned roles</strong>.</li>
-</ul>
-<hr />
-<h1 id="tp-05-validate-search-across-employees-departments-and-projects">TP-05: Validate Search Across Employees, Departments, and Projects</h1>
-<p><strong>Test Plan ID:</strong> TP-05
-<strong>Title:</strong> Validate Search Across Employees, Departments, and Projects</p>
-<hr />
-<h2 id="acceptance-criteria_4">Acceptance Criteria</h2>
-<ul>
-<li>Search must work using <strong>name, email, or project title</strong>.</li>
-<li>System must display matching results with <strong>basic info</strong>.</li>
-<li>If no record is found, system should show <strong>“No records found.”</strong></li>
-</ul>
-<hr />
-<h1 id="tp-06-verify-role-based-access-control-rbac">TP-06: Verify Role-Based Access Control (RBAC)</h1>
-<p><strong>Test Plan ID:</strong> TP-06
-<strong>Title:</strong> Verify Role-Based Access Control</p>
-<hr />
-<h2 id="acceptance-criteria_5">Acceptance Criteria</h2>
-<ul>
-<li><strong>Employee role</strong>: View only their own profile.</li>
-<li><strong>HR/Admin role</strong>: View and manage all records.</li>
-<li>Unauthorized actions must be <strong>denied and logged</strong>.</li>
-<li>System must allow <strong>temporary role-switching</strong> (e.g., HR acting as Employee during leave request).</li>
-</ul>
+<h2 id="testing-strategy-and-roles">Testing Strategy and Roles</h2>
+<p>This table provides detail on the <strong>Test Strategy</strong> and <strong>Roles</strong> responsible for execution and validation.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Test Plan ID</th>
+<th style="text-align: left;">Test Strategy</th>
+<th style="text-align: left;">Roles &amp; Responsibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>TP-01</strong></td>
+<td style="text-align: left;">Functional testing of login inputs; Security checks (password encryption, error handling); Negative testing with wrong credentials; Access control verification.</td>
+<td style="text-align: left;">QA Engineer → Execute tests; Backend Developer → Fix authentication issues; Security Reviewer → Validate encryption logic.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-02</strong></td>
+<td style="text-align: left;">CRUD functional testing; Data integrity validation; Permission-based testing (RBAC); UI/API validation.</td>
+<td style="text-align: left;">QA → Execute CRUD tests; Backend Dev → Resolve backend issues; HR stakeholder → Validate business rules.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-03</strong></td>
+<td style="text-align: left;">Functional testing; Association validation; Database relation testing.</td>
+<td style="text-align: left;">QA → Test department functions; Backend Dev → Fix relation bugs; Project Manager → Validate hierarchy rules.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-04</strong></td>
+<td style="text-align: left;">Functional; Boundary testing (inactive projects); Relation &amp; requirement validation.</td>
+<td style="text-align: left;">QA → Perform assignment tests; Dev → Resolve assignment logic issues; PM → Approve project data structure.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-05</strong></td>
+<td style="text-align: left;">Functional search testing; Keyword-based testing; Negative cases.</td>
+<td style="text-align: left;">QA → Execute search scenarios; Dev → Optimize queries.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TP-06</strong></td>
+<td style="text-align: left;">Permission testing; Negative testing for unauthorized actions; Token/session validation.</td>
+<td style="text-align: left;">QA → Test all role combinations; Dev → Fix permission issues; Security Reviewer → Validate access control patterns.</td>
+</tr>
+</tbody>
+</table>
 
 
 

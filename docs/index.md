@@ -16,18 +16,48 @@ It ensures **secure access control** — only authorized users (like HR or Admin
 ## **Features**
 
 ### **In Scope**
-- User Login & Profile Management  
-- Employee Management  
-- Department Management  
-- Project Management  
-- Role-Based Access Control  
 
-### **Future Scope**
-1. Leave Management  
-2. Salary Details  
-3. Feedback System  
+- **User Login & Profile Management**  
+  Enables secure authentication using JWT and allows users to view and update their personal profiles.
+
+- **Employee Management**  
+  Admin and HR can add, update, or deactivate employee records with role-based permissions.
+
+- **Department Management**  
+  Supports creation and assignment of employees under specific departments for structured hierarchy.
+
+- **Project Management**  
+  Allows creation, tracking, and assignment of projects to employees, including project status monitoring.
+
+- **Role-Based Access Control (RBAC)**  
+  Restricts and manages user actions based on assigned roles such as Admin, HR, or Employee.
 
 ---
+
+### **Future Scope**
+
+1. **Leave Management**  
+   Employees can submit leave requests which will be reviewed and approved or rejected by HR or Admin.
+
+2. **Salary Details**  
+   Automate salary calculation and manage payroll data based on attendance, leaves, and performance metrics.
+
+3. **Feedback System**  
+   Implement a structured feedback mechanism for performance reviews and peer evaluations.
+
+4. **Enhanced Project Management with Time Tracking & Cost Estimation**  
+   Introduce an advanced **module-based time and cost tracking system**, where:  
+   - The **Project Manager** assigns specific working hours for each project module to the respective developers.  
+   - Developers must log their work hours through a **timesheet** within the assigned limits.  
+   - If a developer attempts to log hours **beyond the assigned quota**, the system restricts it automatically.  
+   - The **Project Manager** can increase the allocated hours when needed, and the system records this update — e.g.:  
+     *"Assigned hours updated from 20 to 25 for Module X by Project Manager."*  
+   - Along with time tracking, the system will automatically **calculate the project’s cost** by multiplying each developer’s **hourly rate (derived from their salary)** with the **assigned hours** for that module.  
+   - The **total project cost** will be the sum of all module costs, enabling accurate **budget estimation**, **expense tracking**, and **profitability analysis**.  
+   - These logs will help the management monitor whether the project is on track to meet its **time and budget deadlines**.
+
+---
+
 
 ## **Functional Requirements**
 

@@ -8,6 +8,8 @@ nav:
       - Business: usecase/business.md
   - Data Flow: data_flow.md
   - Entity Relationship Diagram: entity_relationship.md
-
+  - AWS Architecture : aws_architecture.md
+  - Authentication & Authorization Sequence : auth_auto.md
+  - Tech Stack : tech_stack.md
 plugins:
   - mermaid2

@@ -1,0 +1,1 @@
+![](./images/aws_arch.png)

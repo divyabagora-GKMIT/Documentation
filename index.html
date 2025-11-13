@@ -506,6 +506,72 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aws_architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AWS Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="auth_auto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Authentication & Authorization Sequence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tech_stack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tech Stack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -721,17 +787,54 @@ The EMS is a role-based web application that allows organizations to efficiently
 <h2 id="features"><strong>Features</strong></h2>
 <h3 id="in-scope"><strong>In Scope</strong></h3>
 <ul>
-<li>User Login &amp; Profile Management  </li>
-<li>Employee Management  </li>
-<li>Department Management  </li>
-<li>Project Management  </li>
-<li>Role-Based Access Control  </li>
+<li>
+<p><strong>User Login &amp; Profile Management</strong><br />
+  Enables secure authentication using JWT and allows users to view and update their personal profiles.</p>
+</li>
+<li>
+<p><strong>Employee Management</strong><br />
+  Admin and HR can add, update, or deactivate employee records with role-based permissions.</p>
+</li>
+<li>
+<p><strong>Department Management</strong><br />
+  Supports creation and assignment of employees under specific departments for structured hierarchy.</p>
+</li>
+<li>
+<p><strong>Project Management</strong><br />
+  Allows creation, tracking, and assignment of projects to employees, including project status monitoring.</p>
+</li>
+<li>
+<p><strong>Role-Based Access Control (RBAC)</strong><br />
+  Restricts and manages user actions based on assigned roles such as Admin, HR, or Employee.</p>
+</li>
 </ul>
+<hr />
 <h3 id="future-scope"><strong>Future Scope</strong></h3>
 <ol>
-<li>Leave Management  </li>
-<li>Salary Details  </li>
-<li>Feedback System  </li>
+<li>
+<p><strong>Leave Management</strong><br />
+   Employees can submit leave requests which will be reviewed and approved or rejected by HR or Admin.</p>
+</li>
+<li>
+<p><strong>Salary Details</strong><br />
+   Automate salary calculation and manage payroll data based on attendance, leaves, and performance metrics.</p>
+</li>
+<li>
+<p><strong>Feedback System</strong><br />
+   Implement a structured feedback mechanism for performance reviews and peer evaluations.</p>
+</li>
+<li>
+<p><strong>Enhanced Project Management with Time Tracking &amp; Cost Estimation</strong><br />
+   Introduce an advanced <strong>module-based time and cost tracking system</strong>, where:  </p>
+</li>
+<li>The <strong>Project Manager</strong> assigns specific working hours for each project module to the respective developers.  </li>
+<li>Developers must log their work hours through a <strong>timesheet</strong> within the assigned limits.  </li>
+<li>If a developer attempts to log hours <strong>beyond the assigned quota</strong>, the system restricts it automatically.  </li>
+<li>The <strong>Project Manager</strong> can increase the allocated hours when needed, and the system records this update — e.g.:<br />
+<em>"Assigned hours updated from 20 to 25 for Module X by Project Manager."</em>  </li>
+<li>Along with time tracking, the system will automatically <strong>calculate the project’s cost</strong> by multiplying each developer’s <strong>hourly rate (derived from their salary)</strong> with the <strong>assigned hours</strong> for that module.  </li>
+<li>The <strong>total project cost</strong> will be the sum of all module costs, enabling accurate <strong>budget estimation</strong>, <strong>expense tracking</strong>, and <strong>profitability analysis</strong>.  </li>
+<li>These logs will help the management monitor whether the project is on track to meet its <strong>time and budget deadlines</strong>.</li>
 </ol>
 <hr />
 <h2 id="functional-requirements"><strong>Functional Requirements</strong></h2>

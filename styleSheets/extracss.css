@@ -1,7 +1,0 @@
-.md-typeset .mermaid {
-    max-width: 100%;
-    width: 1200px;         /* you can increase/decrease */
-    margin: 0 auto;
-    zoom: 1.3;             /* zoom in 30% */
-    transform-origin: top left;
-}
